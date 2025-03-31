@@ -483,12 +483,34 @@
 
         .footer-links a {
             color: var(--text);
-            text-decoration: none;
+            text-decoration: none;  
         }
 
         .footer-links a:hover {
             color: var(--highlight);
         }
+
+        /* Add these media queries for better responsiveness */
+        @media (max-width: 768px) {
+            footer {
+                padding: 1.5rem 0.5rem;
+            }
+            
+            .footer-links {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .footer-links a {
+                padding: 0.25rem;
+            }
+            }
 
         .data-stream {
             overflow: hidden;
